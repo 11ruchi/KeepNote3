@@ -1,5 +1,73 @@
 .keep-c-toggle-view {
-	width: 100%;
-	margin-left: 93%;
-	cursor: pointer;
+	
+	cursor: pointer; 
+    /*float: right;
+    text-align: center;*/
+    /*width: 100%;*/
+	margin-left: 90%;
+
+    
+	
 }
+
+.material-icons{
+    font-size: 35px;
+}
+
+.mat-toolbar{
+    background: hsl(241, 81%, 23%);
+    color: #fff;
+    text-align: center;
+    font-size: 40px; 
+    font-family: 'Baloo Da', cursive;
+    float: center;
+    /*width: 100%*/
+
+}
+
+/*.header{
+    color: #fff;
+    text-align: center;
+    font-size: 40px; 
+    font-family: 'Baloo Da', cursive;
+    float: center;
+    width: 100%
+   
+}*/
+
+@media (max-width:640px){
+.keep-c-toggle-view {
+	margin-left: 60%;
+	
+}
+    }
+
+
+mat-sidenav{
+    background-color: hsl(136, 53%, 43%);    
+}
+.menu-name{
+    color: #fff;
+    background: hsl(136, 53%, 43%);
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+
+}
+.mat-nav-list{
+    margin-top: 20px;
+   
+}
+
+.mat-list-item{
+    font-size: 20px;
+    color: #a41d1d;
+    font-weight: bolder;
+    font-family: 'Baloo Da', cursive;
+
+}
+.mat-drawer-container{background-color: transparent}
+
+
+
+

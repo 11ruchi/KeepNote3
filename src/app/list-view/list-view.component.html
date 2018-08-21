@@ -1,15 +1,22 @@
-<div class="keep-c-list-container">
+<label class="error-message">{{ errMessage }}</label>
+<div class="keep-c-list-container not-start">
 	<label>Not-Started</label>
-	
+	<div class="keep-c">
+	<app-note [note]="note" *ngFor="let note of notStartedNotes" class="card-container"></app-note>
+</div>
 	<!-- Populate notStartedNotes -->
 </div>
-<div class="keep-c-list-container">
+<div class="keep-c-list-container start">
 	<label>Started</label>
-	
+	<div class="keep-c">
+	<app-note [note]="note" *ngFor="let note of startedNotes" class="card-container"></app-note>
+</div>
 	<!-- Populate startedNotes -->
 </div>
-<div class="keep-c-list-container">
+<div class="keep-c-list-container comp">
 	<label>Completed</label>
-
+	<div class="keep-c">
+	<app-note [note]="note" *ngFor="let note of completedNotes" class="card-container"></app-note>
+</div>
 	<!-- Populate completedNotes -->
 </div>

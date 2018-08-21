@@ -1,20 +1,27 @@
-<!-- Label to display any error messages -->
-<label class="error-message">{{ errMessage }}</label>
-
-
-<mat-form-field> 
-  <input [(ngModel)]="note.title" name="editTitle" matInput placeholder="Title" type="text">
-</mat-form-field>
-<mat-form-field>
-  <textarea [(ngModel)]="note.text" name="editText" matInput placeholder="Text"></textarea>
-</mat-form-field>
-<mat-form-field>
-<mat-select name="editStatus" placeholder="Select state" [(ngModel)]="note.state">
-  <mat-option *ngFor="let state of states" [value]="state">
-    {{ state }}
-  </mat-option>
-</mat-select>
-</mat-form-field>
-<div class="keep-c-done-wrapper">
-  <button mat-button (click)="onSave()">Save</button>
+<div class="edit-note-container">
+  <!-- Label to display any error messages -->
+  <label class="error-message">{{errMessage}}</label>
+  <mat-label class="panel-tle panel-head">Edit Note</mat-label>
+  <form class="edit-note-container">
+    <mat-form-field>
+      <mat-label class="panel-tle">Title</mat-label>
+      <input [(ngModel)]="note.title" name="editTitle" matInput type="text">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label class="panel-tle">Text</mat-label>
+      <textarea [(ngModel)]="note.text" name="editText" matInput></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label class="panel-tle">Select state</mat-label>
+      <mat-select name="editStatus" [(ngModel)]="note.state">
+        <mat-option [value]="">Please select state</mat-option>
+        <mat-option *ngFor="let state of states" [value]="state">
+          {{ state }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <div class="keep-c-done-wrapper">
+      <button mat-button (click)="onSave()" class="note-btn">Save</button>
+    </div>
+  </form>
 </div>

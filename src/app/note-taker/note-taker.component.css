@@ -1,0 +1,89 @@
+.notes {
+    margin: 0 auto;
+    width: 50%;
+    margin-top : 10px;
+    margin-bottom : 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color:lightgray;
+  
+    
+}
+
+
+.notes-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.label-style{
+    font-size: 20px;
+}
+
+.label-style-exp-header{
+    font-size: 25px;
+    color: #ea4335;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.panel-tle{
+      text-align: center;
+      color: #4285f4;
+      font-size: 20px;
+      font-weight: bolder;
+}
+
+.d-block{
+    display: block;
+}
+
+
+
+
+
+
+.error-message{
+    color: red;
+    text-align: center;
+}
+
+.note-btn{
+    color:white;
+    background-color: #ea4335;
+    font-size: 20px;
+    font-weight: bolder;
+     width: 15%;
+     align-self: center;
+   
+}
+input, select, textarea{
+    font-family: 'Baloo Da', cursive;
+    font-weight: bold;
+    color: grey;
+}
+
+
+
+* {
+    font-family: 'Baloo Da', cursive;
+    box-sizing: border-box;
+}
+.notes mat-expansion-panel{
+    border-radius: 10px
+}
+
+@media (max-width:640px){
+.notes{
+    width:90%;
+   
+    }
+
+
+}
+
+.mat-expansion-panel-header.mat-expanded:focus, .mat-expansion-panel-header.mat-expanded:hover{
+    background: none;
+}

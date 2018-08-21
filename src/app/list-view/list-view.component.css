@@ -1,0 +1,51 @@
+.keep-c-list-container{
+    margin: 0% auto; 
+    width:75%;
+    margin-bottom: 2px;
+   
+    
+}
+
+.keep-c-list-container label{
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+
+.keep-c{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    
+}
+
+.card-container{
+    margin: 2px;
+}
+
+.not-start{
+    color: blue;
+}
+.start{
+    color: #2d2dc6;
+}
+.comp{
+    color: blue;
+}
+
+@media (max-width:640px){
+    .notes{
+        width:90%;
+       
+        }
+    
+    
+    }
+
+
+* {
+    font-family: 'Baloo Da', cursive;;
+}

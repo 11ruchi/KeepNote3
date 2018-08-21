@@ -1,0 +1,62 @@
+* {
+    font-family: 'Arial', cursive;;
+}  
+
+.mat-button {
+    color: #fff !important;
+    font-size: 20px;
+}
+.mat-button[disabled][disabled]{opacity:0.6}
+.login-container{
+    margin : 0 auto;
+    width: 40%;
+    margin-top: 20px;
+   
+}
+
+.login-form{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mat-card-actions,.mat-card-title{
+    text-align: center;
+}
+
+
+.mat-card-title{
+    font-weight: bolder;
+    font-size: 20px;
+    color: hsl(136, 53%, 43%);
+   
+}
+
+mat-label{
+     color: #4285f4;
+     font-weight: bolder;
+     font-size: 20px;
+}
+
+.mat-button{
+    
+    background-color: hsl(180, 55%, 50%);
+}
+
+
+
+.error-message{
+    color: rgb(87, 85, 236);
+}
+
+input, select, textarea{
+    font-family: 'Baloo Da', cursive;
+    font-weight: bolder;
+    color: grey;
+}
+@media (max-width:640px){
+.login-container{
+    width:90%;
+}
+    }
+
